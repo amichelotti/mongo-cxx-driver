@@ -928,7 +928,7 @@ if debugBuild:
     env.Append( CPPDEFINES=["MONGO_DEBUG_BUILD"] );
 
 try:
-    umask = os.umask(022)
+    umask = os.umask(0o22)
 except OSError:
     pass
 
