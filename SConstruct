@@ -389,7 +389,7 @@ SConsignFile(str(sconsDataDir.File('sconsign')))
 def printLocalInfo():
     import sys, SCons
     print( "scons version: " + SCons.__version__ )
-    print( "python version: " + " ".join( [ `i` for i in sys.version_info ] ) )
+    print( "python version: " + " ".join( sys.version_info ) )
 
 printLocalInfo()
 
