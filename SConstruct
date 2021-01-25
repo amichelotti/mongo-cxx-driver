@@ -258,7 +258,7 @@ variantDir = get_variant_dir()
 def printLocalInfo():
     import sys, SCons
     print( "scons version: " + SCons.__version__ )
-    print( "python version: " + " ".join( [ `i` for i in sys.version_info ] ) )
+    print( "python version: " + " ".join( [ 'i' for i in sys.version_info ] ) )
 
 printLocalInfo()
 
