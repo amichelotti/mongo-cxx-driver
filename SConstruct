@@ -699,7 +699,7 @@ if has_option( "ssl" ):
         env.Append( LIBS=["crypto"] )
 
 try:
-    umask = os.umask(022)
+    umask = os.umask(0o22)
 except OSError:
     pass
 
